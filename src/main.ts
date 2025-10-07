@@ -48,7 +48,7 @@ function main() {
   }
 
   // Use our boilerplate utils to compile the shaders and link into a program
-  var program = createProgramFromSources(gl, [vertexShaderSource, fragmentShaderSource]);
+  var program = createProgramFromSources(gl, vertexShaderSource, fragmentShaderSource);
 
   // look up where the vertex data needs to go.
   var positionAttributeLocation = gl.getAttribLocation(program, "a_position");
